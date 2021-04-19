@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Student_Stats.Models.Student>
+<h1>Student with maximum and minimum marks in Physics</h1>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Maths</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.age</td>
+            <td>@item.phy</td>
+            <td>@item.chem</td>
+            <td>@item.maths</td>
+        </tr>
+    }
+
+</table>

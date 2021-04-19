@@ -1,0 +1,17 @@
+﻿@model Student_Stats.Models.query_student
+
+
+@{
+    ViewBag.Title = "Contact";
+}
+<div class="container">
+    <h4>Total Number of students: @Model.getcount()</h4>
+    <h4>Number of Subjects : @Model.getsubjects()</h4>
+    <h4>Minimum marks in Physics : @Model.getminPhy()</h4>
+    <h4>Maximum marks in Physics : @Model.getmaxPhy()</h4>
+    <h4>Minimum marks in Chemistry : @Model.getminChe()</h4>
+    <h4>Maximum marks in Chemistry : @Model.getmaxChe()</h4>
+    <h4>Minimum marks in Maths : @Model.getminMath()</h4>
+    <h4>Maximum marks in Maths : @Model.getmaxMath()</h4>
+
+</div>

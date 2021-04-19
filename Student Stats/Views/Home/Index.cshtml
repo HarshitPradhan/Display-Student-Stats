@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Student_Stats.Models.Student>
+@{
+    ViewBag.Title = "Home Page";
+}
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Standard</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Maths</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.age</td>
+            <td>@item.phy</td>
+            <td>@item.chem</td>
+            <td>@item.maths</td>
+        </tr>
+    }
+</table>
